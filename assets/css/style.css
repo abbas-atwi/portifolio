@@ -136,3 +136,14 @@ footer a {
     background-color: #333;
   }
 }
+@media (max-width: 450px) {
+  .container .leftside .info .name {
+    font-size: 50px;
+  }
+  .buttons a {
+    display: block;
+  }
+  .buttons a:last-child {
+    margin-top: 10px;
+  }
+}
