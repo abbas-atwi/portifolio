@@ -142,6 +142,8 @@ footer a {
   }
   .buttons a {
     display: block;
+    margin-right: 0;
+    margin-left: 0;
   }
   .buttons a:last-child {
     margin-top: 10px;
