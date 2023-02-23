@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  /* background-color: #3b576d; */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo::after {
+  content: ".";
+  width: 10px;
+  height: 10px;
+}
+
+header .menu {
+  /* background-color: #333; */
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .menu-line {
+  height: 3px;
+  background-color: #333;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.leftside {
+  flex: 1;
+  background-color: #3b576d;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.container .info {
+  color: #fff;
+}
+.container .info .profession {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.name {
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.rightside {
+  flex: 1;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.rightside img {
+  width: 100%;
+  height: 100%;
+}
+.buttons a {
+  display: inline-block;
+  background-color: #fff;
+  color: #3b576d;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #111;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.buttons a:last-child {
+  color: #fff;
+  background-color: #3b576d;
+}
+.buttons a:hover {
+  opacity: 0.8;
+}
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer a {
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  header {
+    position: initial;
+    background-color: #3b576d;
+  }
+  header .menu-line {
+    background-color: #fff;
+  }
+
+  .container {
+    flex-direction: column;
+    height: calc(100vh - 66px);
+  }
+  .container .leftside {
+    padding: 30px 20px;
+    flex: none;
+    justify-content: center;
+  }
+  .info {
+  }
+  .rightside {
+    /* background-position: top; */
+  }
+  footer {
+    position: initial;
+    background-color: #333;
+  }
+}
